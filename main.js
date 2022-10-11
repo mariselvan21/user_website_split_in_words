@@ -1,0 +1,11 @@
+var website=prompt("Enter any website URL");
+// console.log(website);
+var x=website.split('://');console.log(x);
+var websiteWords=[];
+var index=0;
+websiteWords[index]=x[0];
+// console.log(websiteWords);
+var y=x[1].split('.');
+// console.log(y);
+websiteWords=websiteWords.concat(y);
+console.log(websiteWords);
